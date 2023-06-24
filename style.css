@@ -1,0 +1,419 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;   
+
+    
+}
+body{
+    overflow-x: hidden;
+    border: solid;
+    overflow-y: hidden;
+}
+
+nav{
+    height: 77px;
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 40px;
+    width: 100%;
+    /* border: solid; */
+   /* dis; */
+   
+}
+.navbar{
+   height: 55px;
+   width: 1164px;
+   display: flex;
+   justify-content: center;
+   gap: 80px;
+   /* justify-content: space-between; */
+   text-transform: uppercase;
+   align-items: center;
+  
+   
+   
+}
+.logo {
+
+    width: fit-content;
+}
+.logo img{
+    height:43px;
+    /* width: 139px; */
+    object-fit: contain;
+}
+
+.menu{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    display: flex;
+    color: white;
+    gap: 18px;
+    color: #4E7C9C;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.icon{
+    height: 10px;
+    width: 10px;
+}
+
+#inputDiv{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.search_icon{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    background-color: #111D2B;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#inputDiv
+{
+    display: flex;
+    /* margin-left: 40px; */
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 280px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+#inputDiv img{
+    height: 15px;
+}
+input{
+    background: none;
+    width: 200px;
+    height: 35px;
+    outline: none;
+    border: none;
+}
+
+#wrapper
+{
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #080F1F 15%, #1B2A63 100%);
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    
+}
+
+
+.buy_menu
+{
+
+  
+    position: absolute;
+    height: 180px;
+    padding-top: 80px;
+   
+    opacity: 0;
+ visibility: hidden;
+  transition:visibility 0.4s ease-in-out  opacity 0.4s ease-in-out;
+   
+    width: 100vw;
+background: transparent;   
+display: flex;
+align-items: center;
+justify-content: center;
+
+    top: 45px;
+    left: 0px;
+    gap: 30px;
+    z-index: 1;
+}
+.buy_menu_bg
+{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color:#080F1F;
+   
+    top: 40px;
+    z-index: -1;
+    left: 0px;
+    
+    opacity: 90%;
+
+}
+.zee
+{
+    z-index: 10;
+}
+
+.buy_menu.active{
+    user-select: none;
+    visibility: visible;
+    transform: translateY(-15px);
+   
+    transition-duration: .4s;
+    position: absolute;
+    height: 180px;
+    padding-top: 80px;
+    opacity: 1;
+    visibility: visible;
+    width: 100vw;
+background: transparent;   
+   
+display: flex;
+align-items: center;
+justify-content: center;                        
+ 
+    top: 45px;
+    left: 0px;
+    gap: 30px;
+  
+    z-index: 1;
+    
+}
+
+
+
+
+
+/* /// */
+
+.sell_menu
+{
+
+   
+    opacity: 0;
+ 
+    transition:visibility 0.4s ease-in-out  translate 0.4s ease-in-out opacity 0.4s ease-in-out;
+     visibility: hidden;
+    position: absolute;
+    height: 250px;
+    padding-top: 80px;
+    width: 100vw;
+background: transparent;   
+display: flex;
+align-items: center;
+justify-content: center;
+    top: 45px;
+    left: 0px;
+    gap: 15px;
+    z-index: 1;
+}
+.sell_menu_bg
+{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color:#080F1F;
+   
+    top: 40px;
+    z-index: -1;
+    left: 0px;
+    
+    opacity: 90%;
+
+}
+
+
+.sell_menu.active{
+
+    user-select: none;
+    transform: translateY(-15px);
+   
+    transition-duration: .4s;
+    position: absolute;
+    height: 250px;
+    padding-top: 80px;
+    width: 100vw;
+background: transparent;   
+   
+display: flex;
+align-items: center;
+justify-content: center;
+
+    top: 45px;
+    transform: translateY(-10px);
+    opacity: 1;
+    visibility: visible;
+   
+    left: 0px;
+    gap: 15px;
+  
+    z-index: 1;
+    
+}
+
+
+
+#buybutt{
+    position: relative;
+    /* color: green; */
+}
+
+
+
+
+#sellbutt{
+    position: relative;
+}
+
+/*  */
+
+#sellbutt{
+    position: relative;
+}
+
+
+
+.bb{
+    display: flex;
+    gap: 5px;
+}
+
+.ss
+{
+    display: flex;
+    gap: 5px;
+}
+
+.card
+{
+    /* Firefox */
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 115px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2px;
+    color: #4E7C9C;
+    
+    background-color: #121D43;
+}
+
+.card2
+{
+    height: 200px;
+    width: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2px;
+    color: #4E7C9C;
+    
+    background-color: #121D43;
+}
+.heading, .heading2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+
+
+.shopping{
+   width: 10px;
+   height: 10px;
+}
+
+.icons{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+
+.mainLoginInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Open Sans', sans-serif;   /* Firefox */
+    font-size: 16px;
+    line-height:40px ;
+    font-weight: 100;
+  }
+
+  #hero{
+    height: 100vh;
+    width: 100;
+    background-color: #1B2A63;
+  }
+
+  .pink:hover {
+    color: #FF2DAB;
+  }
+
+  .arrow{
+    transform: scaleX(2);
+    transform: rotate(90deg);
+    
+
+  }
+
+
+  .sell_menu img{
+   
+    width: 100%;
+    height: 100%;
+  }
+  .card2 div{
+    height: 120px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+
+    object-fit:cover;
+  }
+  
+
+  .card2_texts{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+  }
+  .card2_texts1:hover, .card2_texts2:hover {
+    
+   
+    color: #FF2DAB;
+   
+
+  }
+  .card2_texts2{
+    color:#4E7C9C;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+  }
+ 
+
+  .card2 ,.card {
+    opacity: 70%;
+    
+  }
+
+  .card2:hover ,.card:hover {
+    opacity: 100%;
+    
+  }
